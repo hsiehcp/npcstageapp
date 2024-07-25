@@ -4,15 +4,17 @@ import streamlit as st
 def get_nasopharyngeal_cancer_stage(T, N, M):
     if M == "M1":
         return "Stage IVC"
-    elif N == "N3" or (T == "T4" and N in ["N0", "N1", "N2"]):
+    elif N == "N3":
         return "Stage IVB"
-    elif (T in ["T3"] and N in ["N0", "N1", "N2"]) or (T in ["T1", "T2"] and N == "N2"):
+    elif T == "T4" and N in ["N0", "N1", "N2"]:
+        return "Stage IVA"
+    elif T == "T3" or N == "N2":
         return "Stage III"
-    elif T in ["T1", "T2"] and N in ["N0", "N1"]:
+    elif T == "T2" or N == "N1":
         return "Stage II"
-    elif T == "T1" and N == "N0":
+    elif T == "T1" and N == "N0" and M == "M0":
         return "Stage I"
-    elif T == "Tis" and N == "N0":
+    elif T == "Tis" and N == "N0" and M == "M0":
         return "Stage 0"
     else:
         return "Stage not defined for given inputs."
@@ -34,7 +36,7 @@ def main():
     display_ajcc_tnm_and_stage()
 
     # Input fields for T, N, M values
-    T = st.selectbox("Enter the T value", ["T1", "T2", "T3", "T4", "TX", "T0", "Tis"])
+    T = st.selectbox("Enter the T value", ["Tis", "T0", "T1", "T2", "T3", "T4", "TX"])
     N = st.selectbox("Enter the N value", ["N0", "N1", "N2", "N3", "NX"])
     M = st.selectbox("Enter the M value", ["M0", "M1"])
 
