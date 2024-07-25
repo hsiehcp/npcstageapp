@@ -1,0 +1,34 @@
+### AJCC TNM Classification for Nasopharyngeal Cancers: 8th Edition (2017)
+
+#### T (Tumor)
+- **TX**: Primary tumor cannot be assessed.
+- **T0**: No evidence of primary tumor.
+- **Tis**: Carcinoma in situ.
+- **T1**: Tumor confined to the nasopharynx, or extends to oropharynx and/or nasal cavity without parapharyngeal involvement.
+- **T2**: Tumor with extension to parapharyngeal space (prevertebral muscles).
+- **T3**: Tumor with bone involvement (base of skull and/or cervical vertebra) or paranasal sinuses.
+- **T4**: Tumor with intracranial extension and/or involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle.
+
+#### N (Nodes)
+- **NX**: Regional lymph nodes cannot be assessed.
+- **N0**: No regional lymph node metastasis.
+- **N1**: Unilateral metastasis in cervical lymph node(s), ≤6 cm in greatest dimension, above the supraclavicular fossa and/or unilateral or bilateral, retropharyngeal lymph nodes, ≤6 cm.
+- **N2**: Bilateral metastasis in cervical lymph node(s), ≤6 cm, above the supraclavicular fossa.
+- **N3**: 
+  - **N3a**: Metastasis in lymph node(s) >6 cm in dimension.
+  - **N3b**: Metastasis in supraclavicular fossa.
+
+#### M (Metastasis)
+- **M0**: No distant metastasis.
+- **M1**: Distant metastasis present.
+
+### Prognostic Stage Groups
+The prognostic stage combines the TNM classifications to define overall stages. The stages are used to predict patient outcomes and guide treatment plans. For nasopharyngeal cancer, the stages are as follows:
+
+- **Stage 0**: Tis, N0, M0
+- **Stage I**: T1, N0, M0
+- **Stage II**: T1, N1, M0 or T2, N0, M0 or T2, N1, M0
+- **Stage III**: T0-2, N2, M0 or T3, N0-N2, M0
+- **Stage IVA**: T4, N0-N2, M0
+- **Stage IVB**: Any T, N3, M0
+- **Stage IVC**: Any T, Any N, M1
